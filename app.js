@@ -18,6 +18,8 @@ module.exports = (mocks, callback) => {
 	const models = mocks.models || require('./api/models');
 	const dbUri = config.MONGO.URI;
 	const dbOptions = {
+		user: config.MONGO.USERNAME, 
+		pass: config.MONGO.PASSWORD,
 		useNewUrlParser: true,
 	}
 

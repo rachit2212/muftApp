@@ -1,8 +1,6 @@
 {
 	"MONGO": {
-		"URI": "mongodb://localhost:27010/muft",
-		"USERNAME": "muft",
-		"PASSWORD": "muft@123"
+		"URI": "mongodb://localhost:27017/muft"
 	},
 	"LOGGING": {
 		"LEVEL": "debug",

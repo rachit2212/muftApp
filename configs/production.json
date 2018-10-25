@@ -1,6 +1,6 @@
 {
   "MONGO": {
-    "URI": "mongodb://52.66.239.186:27010/muft",
+    "URI": "mongodb://localhost:27010/muft",
     "USERNAME": "muft",
     "PASSWORD": "muft@123"
   },
