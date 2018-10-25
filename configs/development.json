@@ -1,0 +1,13 @@
+{
+	"MONGO": {
+		"URI": "mongodb://localhost:27017/muft",
+		"USERNAME": "muft",
+		"PASSWORD": "muft@123"
+	},
+	"LOGGING": {
+		"LEVEL": "debug",
+		"LOG_DAYS": "7d"
+	},
+	"TOKEN_EXPIRY_TIME": 259200000,
+	"JWT_SECRET": "it is a secret thing"
+}

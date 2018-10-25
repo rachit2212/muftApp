@@ -1,0 +1,29 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 7
+    },
+    "auditLog": "/home/ttnd/WebstormProjects/muft/logs/.audit.json",
+    "files": [
+        {
+            "date": 1539766020585,
+            "name": "/home/ttnd/WebstormProjects/muft/logs/clarifai.log.2018-10-17",
+            "hash": "da717620a8d3ec16967bbdd5ef8087e0"
+        },
+        {
+            "date": 1539842848151,
+            "name": "/home/ttnd/WebstormProjects/muft/logs/clarifai.log.2018-10-18",
+            "hash": "714bb450a91d608659ba4c5b07984bea"
+        },
+        {
+            "date": 1540182300045,
+            "name": "/home/ttnd/WebstormProjects/muft/logs/clarifai.log.2018-10-22",
+            "hash": "287c2432eb92818360435ea0196cea8b"
+        },
+        {
+            "date": 1540274124639,
+            "name": "/home/ttnd/WebstormProjects/muft/logs/clarifai.log.2018-10-23",
+            "hash": "862d8607e307587b4c62f323e0def7ca"
+        }
+    ]
+}

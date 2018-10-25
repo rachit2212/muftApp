@@ -1,0 +1,28 @@
+{
+  "name": "muft",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./bin/www"
+  },
+  "author": "rachit",
+  "license": "ISC",
+  "engines": {
+    "node": "8.11.3"
+  },
+  "dependencies": {
+    "async": "2.6.1",
+    "body-parser": "1.18.3",
+    "cors": "2.8.4",
+    "express": "4.16.0",
+    "jwt-simple": "0.5.1",
+    "moment": "2.22.2",
+    "mongoose": "5.2.8",
+    "morgan": "1.9.0",
+    "request": "2.88.0",
+    "winston": "3.0.0",
+    "winston-daily-rotate-file": "3.3.1"
+  }
+}

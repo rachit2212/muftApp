@@ -1,0 +1,47 @@
+error: on /customer/updateScore giving error : "{"error_message":"Session has expired. Please login again using your API Key","error_code":"TOKEN_EXPIRED"}" {"timestamp":"2018-10-18T06:15:40.170Z"}
+error: on /customer/updateScore giving error : "{"errors":{"category":{"message":"Path `category` is required.","name":"ValidatorError","properties":{"message":"Path `category` is required.","type":"required","path":"category"},"kind":"required","path":"category","$isValidatorError":true}},"_message":"AnsweredQuestionModel validation failed","message":"AnsweredQuestionModel validation failed: category: Path `category` is required.","name":"ValidationError"}" {"timestamp":"2018-10-18T06:16:02.054Z"}
+error: on /customer/updateScore giving error : "{"errors":{"category":{"message":"Path `category` is required.","name":"ValidatorError","properties":{"message":"Path `category` is required.","type":"required","path":"category"},"kind":"required","path":"category","$isValidatorError":true}},"_message":"AnsweredQuestionModel validation failed","message":"AnsweredQuestionModel validation failed: category: Path `category` is required.","name":"ValidationError"}" {"timestamp":"2018-10-18T06:21:28.203Z"}
+error: on /customer/updateScore giving error : "{"errors":{"category":{"message":"Path `category` is required.","name":"ValidatorError","properties":{"message":"Path `category` is required.","type":"required","path":"category"},"kind":"required","path":"category","$isValidatorError":true}},"_message":"AnsweredQuestionModel validation failed","message":"AnsweredQuestionModel validation failed: category: Path `category` is required.","name":"ValidationError"}" {"timestamp":"2018-10-18T06:21:54.574Z"}
+error: on /customer/updateScore giving error : "{"errors":{"category":{"message":"Path `category` is required.","name":"ValidatorError","properties":{"message":"Path `category` is required.","type":"required","path":"category"},"kind":"required","path":"category","$isValidatorError":true}},"_message":"AnsweredQuestionModel validation failed","message":"AnsweredQuestionModel validation failed: category: Path `category` is required.","name":"ValidationError"}" {"timestamp":"2018-10-18T06:22:19.722Z"}
+error: on /customer/updateScore giving error : "{"expose":true,"statusCode":400,"status":400,"body":"{\n\t\"pointsGained\": 5,\n\t\"category\": \"DAILY_QUIZ\"\n\t\"questionId\": \"5bc82365ae463e14f7e6bab5\"\n}","type":"entity.parse.failed","error_message":"some error occurred"}" {"timestamp":"2018-10-18T06:22:53.191Z"}
+error: on /customer/updateScore giving error : "User has already answered this question" {"timestamp":"2018-10-18T07:02:15.431Z"}
+error: on /customer/updateScore giving error : "{"error_message":"User has already answered this question"}" {"timestamp":"2018-10-18T07:02:58.533Z"}
+error: on /customer/updateScore giving error : "{"error_message":"User has already answered this question"}" {"timestamp":"2018-10-18T07:03:00.596Z"}
+error: on /customer/updateScore giving error : "{"error_message":"User has already answered this question"}" {"timestamp":"2018-10-18T07:03:34.191Z"}
+error: on /customer/updateScore giving error : "{"error_message":"User has already answered this question"}" {"timestamp":"2018-10-18T07:03:48.748Z"}
+error: on /customer/updateScore giving error : "{"error_message":"User has already answered this question"}" {"timestamp":"2018-10-18T07:03:51.348Z"}
+error: on /customer/updateScore giving error : "{"error_message":"User has already answered this question"}" {"timestamp":"2018-10-18T07:04:15.165Z"}
+error: on /customer/updateScore giving error : "{"error_message":"User has already answered this question"}" {"timestamp":"2018-10-18T07:05:03.729Z"}
+error: on /customer/updateScore giving error : "{"error_message":"User has already answered this question"}" {"timestamp":"2018-10-18T07:10:50.483Z"}
+error: on /customer/updateScore giving error : "{"error_message":"User has already answered this question"}" {"timestamp":"2018-10-18T07:10:51.489Z"}
+error: on /customer/updateScore giving error : "{"error_message":"User has already answered this question"}" {"timestamp":"2018-10-18T07:10:52.099Z"}
+error: on /customer/updateScore giving error : "{"error_message":"User has already answered this question"}" {"timestamp":"2018-10-18T07:11:35.413Z"}
+error: on /admin/question giving error : "{"error_message":"Resource requested does not exist"}" {"timestamp":"2018-10-18T07:49:29.352Z"}
+error: on /admin/question giving error : "{"error_message":"Invalid parameters"}" {"timestamp":"2018-10-18T08:33:21.616Z"}
+error: on /admin/question giving error : "{"error_message":"Invalid parameters"}" {"timestamp":"2018-10-18T08:33:31.530Z"}
+error: on /admin/question giving error : "{"error_message":"Invalid parameters"}" {"timestamp":"2018-10-18T08:33:53.367Z"}
+error: on /admin/question giving error : "{"expose":true,"statusCode":400,"status":400,"body":"{\n\t\"category\":\"DAILY_QUIZ\",\n\t\"questionText\": \"What is the capital of India ?\",\n\t\"options\": [\"Lucknow\", \"New Delhi\", \"Agra\", \"Bangalore\"],\n\t\n}","type":"entity.parse.failed","error_message":"some error occurred"}" {"timestamp":"2018-10-18T08:33:59.756Z"}
+error: on /admin/question giving error : "{"error_message":"Invalid parameters"}" {"timestamp":"2018-10-18T08:34:06.141Z"}
+error: on /customer/questions?category=SELFI_MISSION giving error : "{"error_message":"Invalid parameters"}" {"timestamp":"2018-10-18T08:41:14.868Z"}
+error: on /admin/question giving error : "{"error_message":"Invalid question category"}" {"timestamp":"2018-10-18T08:51:46.636Z"}
+error: on /admin/question giving error : "{"error_message":"Invalid question category"}" {"timestamp":"2018-10-18T08:51:51.683Z"}
+error: on /admin/question giving error : "{"error_message":"Invalid question category"}" {"timestamp":"2018-10-18T08:51:55.071Z"}
+error: on /admin/question giving error : "{"error_message":"Invalid parameters"}" {"timestamp":"2018-10-18T08:52:36.473Z"}
+error: on /admin/question giving error : "{"error_message":"Invalid parameters"}" {"timestamp":"2018-10-18T08:54:36.252Z"}
+error: on /admin/question giving error : "{"error_message":"Invalid parameters"}" {"timestamp":"2018-10-18T08:54:54.500Z"}
+error: on /admin/question giving error : "{"errors":{"correctOption":{"message":"Path `correctOption` is required.","name":"ValidatorError","properties":{"message":"Path `correctOption` is required.","type":"required","path":"correctOption"},"kind":"required","path":"correctOption","$isValidatorError":true}},"_message":"QuestionModel validation failed","message":"QuestionModel validation failed: correctOption: Path `correctOption` is required.","name":"ValidationError"}" {"timestamp":"2018-10-18T08:55:04.727Z"}
+error: on /admin/question giving error : "{"error_message":"Invalid parameters"}" {"timestamp":"2018-10-18T08:56:05.598Z"}
+error: on /admin/question giving error : "{"error_message":"Resource requested does not exist"}" {"timestamp":"2018-10-18T10:13:11.749Z"}
+error: on /admin/question giving error : "{"error_message":"Invalid parameters"}" {"timestamp":"2018-10-18T10:15:14.216Z"}
+error: on /admin/question?date=2018-18-10 giving error : "{"error_message":"some error occurred"}" {"timestamp":"2018-10-18T10:15:32.982Z"}
+error: on /admin/question?date=2018-10-18 giving error : "{"error_message":"some error occurred"}" {"timestamp":"2018-10-18T10:15:45.628Z"}
+error: on /admin/question?date=2018-18-10 giving error : "{"error_message":"some error occurred"}" {"timestamp":"2018-10-18T10:15:48.933Z"}
+error: on /admin/question?date=2018-18-10 giving error : "{"message":"Cast to date failed for value \"NaN\" at path \"createdAt\" for model \"QuestionModel\"","name":"CastError","stringValue":"\"NaN\"","kind":"date","value":null,"path":"createdAt"}" {"timestamp":"2018-10-18T10:16:22.017Z"}
+error: on /admin/question?date=2018-18-10 giving error : "{"message":"Cast to number failed for value \"NaN\" at path \"timeRange.start\" for model \"QuestionModel\"","name":"CastError","stringValue":"\"NaN\"","kind":"number","value":null,"path":"timeRange.start"}" {"timestamp":"2018-10-18T10:18:52.035Z"}
+error: on /admin/question?date=2018-18-10 giving error : "{"message":"Cast to number failed for value \"NaN\" at path \"timeRange.start\" for model \"QuestionModel\"","name":"CastError","stringValue":"\"NaN\"","kind":"number","value":null,"path":"timeRange.start"}" {"timestamp":"2018-10-18T10:19:27.578Z"}
+error: on /customer/questions?category=DAILY_QUIZ giving error : "{"error_message":"Invalid parameters"}" {"timestamp":"2018-10-18T11:23:50.281Z"}
+error: on /customer/questions?category=DAILY_QUIZ giving error : "{"error_message":"Invalid parameters"}" {"timestamp":"2018-10-18T11:25:00.355Z"}
+error: on /customer/updateScore giving error : "{"error_message":"User has already answered this question"}" {"timestamp":"2018-10-18T11:30:41.097Z"}
+error: on /admin/question?date=2018-10-18 giving error : "{"error_message":"Invalid parameters"}" {"timestamp":"2018-10-18T11:31:54.451Z"}
+error: on /admin/question?date=2018-10-18 giving error : "{"error_message":"Invalid parameters"}" {"timestamp":"2018-10-18T11:32:45.876Z"}
+error: on /admin/question?date=2018-10-18 giving error : "{"error_message":"Invalid parameters"}" {"timestamp":"2018-10-18T11:32:56.015Z"}

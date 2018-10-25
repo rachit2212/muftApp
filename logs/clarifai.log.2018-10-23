@@ -1,0 +1,28 @@
+error: on /customer/applyPromoCode giving error : "{"error_message":"Session has expired. Please login again using your API Key","error_code":"TOKEN_EXPIRED"}" {"timestamp":"2018-10-23T05:56:40.998Z"}
+error: on /customer/applyPromoCode giving error : "invalid promo code" {"timestamp":"2018-10-23T05:57:27.541Z"}
+error: on /customer/applyPromoCode giving error : "{"error_message":"invalid promo code"}" {"timestamp":"2018-10-23T06:06:50.656Z"}
+error: on /customer/applyPromoCode giving error : "{"error_message":"Invalid parameters"}" {"timestamp":"2018-10-23T06:07:00.080Z"}
+error: on /customer/applyPromoCode giving error : "{"error_message":"invalid promo code"}" {"timestamp":"2018-10-23T06:07:03.996Z"}
+error: on /customer/applyPromoCode giving error : "{"error_message":"promo code expired"}" {"timestamp":"2018-10-23T06:07:22.691Z"}
+error: on /customer/applyPromoCode giving error : "{"error_message":"promo code expired"}" {"timestamp":"2018-10-23T06:14:51.093Z"}
+error: on /customer/applyPromoCode giving error : "{"error_message":"promo code expired"}" {"timestamp":"2018-10-23T06:17:03.544Z"}
+error: on /customer/applyPromoCode giving error : "{"error_message":"promo code not yet active"}" {"timestamp":"2018-10-23T06:20:26.405Z"}
+error: on /customer/applyPromoCode giving error : "{"error_message":"promo code not yet active"}" {"timestamp":"2018-10-23T06:22:14.643Z"}
+error: on /customer/applyPromoCode giving error : "{"error_message":"promo code expired"}" {"timestamp":"2018-10-23T06:23:07.206Z"}
+error: on /customer/applyPromoCode giving error : "{"error_message":"promo code expired"}" {"timestamp":"2018-10-23T06:23:35.860Z"}
+error: on /customer/applyPromoCode giving error : "{"error_message":"promo code not yet active"}" {"timestamp":"2018-10-23T06:26:13.406Z"}
+error: on /customer/applyPromoCode giving error : "{"error_message":"promo code not yet active"}" {"timestamp":"2018-10-23T06:34:50.595Z"}
+error: on /customer/applyPromoCode giving error : "{"error_message":"promo code not yet active"}" {"timestamp":"2018-10-23T06:34:51.817Z"}
+error: on /customer/applyPromoCode giving error : "{"error_message":"promo code expired"}" {"timestamp":"2018-10-23T06:35:27.129Z"}
+error: on /customer/applyPromoCode giving error : "{"error_message":"promo code expired"}" {"timestamp":"2018-10-23T06:37:04.875Z"}
+error: on /customer/applyPromoCode giving error : "{"error_message":"promo code not yet active"}" {"timestamp":"2018-10-23T06:38:47.295Z"}
+error: on /customer/applyPromoCode giving error : "{"error_message":"promo code not yet active"}" {"timestamp":"2018-10-23T06:39:01.707Z"}
+error: on /customer/applyPromoCode giving error : "{"error_message":"promo code expired"}" {"timestamp":"2018-10-23T06:39:54.285Z"}
+error: on /customer/applyPromoCode giving error : "{"error_message":"promo code not yet active"}" {"timestamp":"2018-10-23T06:40:06.022Z"}
+error: on /customer/applyPromoCode giving error : "{"errors":{"score":{"message":"Cast to Number failed for value \"NaN\" at path \"score\"","name":"CastError","stringValue":"\"NaN\"","kind":"Number","value":null,"path":"score","reason":{"message":"Cast to number failed for value \"NaN\" at path \"score\"","name":"CastError","stringValue":"\"NaN\"","kind":"number","value":null,"path":"score"}}},"_message":"User validation failed","message":"User validation failed: score: Cast to Number failed for value \"NaN\" at path \"score\"","name":"ValidationError"}" {"timestamp":"2018-10-23T06:43:09.580Z"}
+error: on /customer/applyPromoCode giving error : "{"errors":{"score":{"message":"Cast to Number failed for value \"NaN\" at path \"score\"","name":"CastError","stringValue":"\"NaN\"","kind":"Number","value":null,"path":"score","reason":{"message":"Cast to number failed for value \"NaN\" at path \"score\"","name":"CastError","stringValue":"\"NaN\"","kind":"number","value":null,"path":"score"}}},"_message":"User validation failed","message":"User validation failed: score: Cast to Number failed for value \"NaN\" at path \"score\"","name":"ValidationError"}" {"timestamp":"2018-10-23T06:49:00.401Z"}
+error: on /customer/applyPromoCode giving error : "{"error_message":"promo code already applied earlier"}" {"timestamp":"2018-10-23T06:51:20.908Z"}
+error: on /customer/applyPromoCode giving error : "{"error_message":"invalid promo code"}" {"timestamp":"2018-10-23T06:57:30.361Z"}
+error: on /customer/applyPromoCode giving error : "{"error_message":"promo code already applied for today"}" {"timestamp":"2018-10-23T06:57:39.830Z"}
+error: on /customer/applyPromoCode giving error : "{"error_message":"promo code already applied for today"}" {"timestamp":"2018-10-23T06:59:07.396Z"}
+error: on /customer/applyPromoCode giving error : "{"error_message":"promo code already applied for today"}" {"timestamp":"2018-10-23T07:00:03.299Z"}
