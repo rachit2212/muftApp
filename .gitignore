@@ -1,1 +1,4 @@
+.idea
 .idea/*
+logs/*
+node_modules

@@ -6,7 +6,7 @@ const winston = require('winston')
 require('winston-daily-rotate-file');
 
 const rotateTransport = new (winston.transports.DailyRotateFile)({
-	filename: path.resolve('logs/clarifai.log')
+	filename: path.resolve('logs/muft.log')
 	, datePattern: 'YYYY-MM-DD'
 	, format: winston.format.combine(
 		winston.format.timestamp(),
