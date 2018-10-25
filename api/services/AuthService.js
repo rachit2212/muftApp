@@ -26,6 +26,14 @@ const generateToken = (user, cb) => {
 		, email: user.email
 		, score: user.score || 0
 		, role: user.role
+		, loginType: user.loginType
+	}
+
+	if (user.mobile) {
+		userData.mobile = user.mobile;
+	}
+	if (user.gender) {
+		userData.gender = user.gender;
 	}
 	cb(null, userData);
 }
@@ -63,7 +71,16 @@ const validateCredentials = (userName, password, cb) => {
 			, email : user.email
 			, score: user.score || 0
 			, role: CONSTANTS.ROLES.CUSTOMER
+			, loginType: user.userLoginType
 		}
+
+		if (user.mobile) {
+			userObj.mobile = user.mobile;
+		}
+		if (user.gender) {
+			userObj.gender = user.gender;
+		}
+		
 		return cb(null, userObj);
 	});
 }
@@ -77,6 +94,13 @@ const signUp = (params, cb) => {
 		, dateCreated: new Date()
 	});
 	
+	if (params.mobile) {
+		user.mobile = params.mobile;
+	}
+	if (params.gender) {
+		user.gender = params.gender;
+	}
+	
 	user.save((err, userData) => {
 		if(err) {
 			return cb(err)
@@ -87,9 +111,15 @@ const signUp = (params, cb) => {
 			, score: 0
 			, email : userData.email
 			, role: CONSTANTS.ROLES.CUSTOMER
+			, loginType: userData.userLoginType
+		}
+		if (userData.mobile) {
+			userObj.mobile = userData.mobile;
+		}
+		if (userData.gender) {
+			userObj.gender = userData.gender;
 		}
 		return cb(null, userObj);
-		cb(null, userObj);
 	});
 }
 

@@ -27,7 +27,7 @@ module.exports = new Schema({
 	, gender: String
 	, resetPasswordToken: String
 	, resetPasswordExpires: Date
-	, userLoginType: String
+	, userLoginType: { type: String, enum: ["normal", "googleLogin", "facebookLogin"], default: "normal" }
 	, isSocialLogin: Boolean
 	, score: { type: Number, default: 0 }
 	, promoCode: {
