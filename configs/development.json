@@ -7,5 +7,15 @@
 		"LOG_DAYS": "7d"
 	},
 	"TOKEN_EXPIRY_TIME": 259200000,
-	"JWT_SECRET": "it is a secret thing"
+	"JWT_SECRET": "it is a secret thing",
+	"smtpConfig" : {
+		"host": "smtp.gmail.com",
+		"secureConnection": false,
+		"port": 587,
+		"auth": {
+			"user": "noreply.muft@gmail.com"
+			, "pass": "muftt@1234"
+		}
+	},
+	"EMAIL_SENDER": "noreply.muft@gmail.com"
 }

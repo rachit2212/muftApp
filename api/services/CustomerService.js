@@ -45,6 +45,7 @@ const updateScore = (payload, cb) => {
 const addAnsweredQuestion = (payload, cb) => {
 	const query = {
 		username: payload.username
+		, questionId: payload.questionId
 		, category: payload.category
 		, date: {
 			$gte: moment().startOf('day').toDate().getTime(),

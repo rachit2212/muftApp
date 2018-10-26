@@ -5,6 +5,7 @@ const jwtSimple = require('jwt-simple')
 
 let config
 	, models
+	, mailService
 	;
 
 const generateToken = (user, cb) => {
@@ -164,6 +165,35 @@ const changePassword = (payload, cb) => {
 	})
 }
 
+const forgotPassword = (payload, cb) => {
+	const query = {
+		userName: payload.userName,
+	};
+
+	models.users.findOne(query).exec((err, userObj) => {
+		if (err) {
+			return cb (err);
+		} else if (!userObj) {
+			return cb('User with this username does not exist')
+		} else if (userObj.email !== payload.email) {
+			return cb('User email id does not matches with existing one')
+		} else {
+			userObj.password = payload.password;
+			userObj.save(err => {
+				if (err) {
+					return cb (err);
+				} else {
+					payload.subject = 'Muftt password changed successfully'
+					payload.fromEmail = config.EMAIL_SENDER;
+					payload.to = payload.email;
+					mailService.sendEmail(payload)
+					cb(null, { status: 'Mail sent successfully' })
+				}
+			})
+		}
+	})
+}
+
 const hashPassword = (password, salt) => {
 	var hash = crypto.createHash('sha256');
 	hash.update(password);
@@ -177,6 +207,7 @@ const authService = {
 	, signUp
 	, validateToken
 	, changePassword
+	, forgotPassword
 }
 
 module.exports = function(cfg) {
@@ -190,6 +221,8 @@ module.exports = function(cfg) {
 
 	config = cfg.config;
 	models = cfg.models;
+
+	mailService = require('./MailService')(cfg);
 
 	return authService;
 };

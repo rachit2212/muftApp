@@ -8,6 +8,7 @@ function loadRoutes() {
 	router.post('/signup', authController.signUp);
 	router.post('/login', authController.login);
 	router.post('/changePassword', authController.changePassword);
+	router.post('/forgotPassword', authController.forgotPassword);
 	router.get('/uniqueUsername', authController.uniqueUsername)
 }
 
