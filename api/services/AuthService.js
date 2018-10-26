@@ -1,4 +1,5 @@
 const jwtSimple = require('jwt-simple')
+	, crypto = require('crypto')
 	, CONSTANTS = require('./../../configs/constants')
 	;
 
@@ -137,11 +138,45 @@ const validateToken = (token, cb) => {
 	}
 }
 
+const changePassword = (payload, cb) => {
+	const query = {
+		userName: payload.userName
+	};
+
+	models.users.findOne(query).exec((err, userObj) => {
+		if (err) {
+			return cb (err);
+		} else if (!userObj) {
+			return cb('User with these credentials does not exist')
+		} else {
+			if (userObj.password !== hashPassword(payload.oldPassword, userObj.salt)) {
+				return cb('User with these credentials does not exist')
+			}
+			userObj.password = payload.newPassword;
+			userObj.save(err => {
+				if (err) {
+					return cb (err);
+				} else {
+					return cb(null, { data: 'password updated successfully' });
+				}
+			})
+		}
+	})
+}
+
+const hashPassword = (password, salt) => {
+	var hash = crypto.createHash('sha256');
+	hash.update(password);
+	hash.update(salt);
+	return hash.digest('hex');
+}
+
 const authService = {
 	validateCredentials
 	, generateToken
 	, signUp
 	, validateToken
+	, changePassword
 }
 
 module.exports = function(cfg) {

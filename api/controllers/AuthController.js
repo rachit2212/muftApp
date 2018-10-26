@@ -112,12 +112,28 @@ const authorizeRole = (roles) => {
 	};
 };
 
+const changePassword = (req, res) => {
+	const params = req.body;
+
+	if(!params || !params.userName || !params.oldPassword || !params.newPassword) {
+		return respond.send400(req, res);
+	}
+
+	authService.changePassword(params, (err, result) => {
+		if(err) {
+			return respond.send500(req, res, { error_message: err })
+		}
+		respond.send200(req, res, result);
+	})
+}
+
 const auth = {
 	login
 	, signUp
 	, uniqueUsername
 	, authorizeRole
 	, authenticate
+	, changePassword
 }
 
 module.exports = function(cfg) {
